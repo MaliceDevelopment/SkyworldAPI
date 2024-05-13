@@ -1,6 +1,7 @@
 package malicedev.skyworldapi;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.core.world.type.WorldTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.util.GameStartEntrypoint;
@@ -13,6 +14,7 @@ public class SkyWorldAPI implements ModInitializer, GameStartEntrypoint, RecipeE
     @Override
     public void onInitialize() {
         LOGGER.info("SkyWorldAPI initialized.");
+		WorldTypes.register(MOD_ID+":skyblock", new WorldTypeSkyblock("skyblock"));
     }
 
 	@Override
