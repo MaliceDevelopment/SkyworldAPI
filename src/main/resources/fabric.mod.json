@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "skyworldapi",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "SkyWorld API",
+  "description": "This mod aims to help skyblock lovers.",
   "authors": [
-    "Turnip Labs"
+    "malicedev,SamuelDeboni,TheMidford"
   ],
   "contact": {
     "homepage": "",
@@ -19,16 +19,16 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "malicedev.examplemod.ExampleMod"
+      "malicedev.skyworldapi.SkyWorldAPI"
     ],
 		"beforeGameStart": [
-          "malicedev.examplemod.ExampleMod"
+          "malicedev.skyworldapi.SkyWorldAPI"
 		],
 		"afterGameStart": [
-          "malicedev.examplemod.ExampleMod"
+          "malicedev.skyworldapi.SkyWorldAPI"
 		],
 		"recipesReady": [
-          "malicedev.examplemod.ExampleMod"
+          "malicedev.skyworldapi.SkyWorldAPI"
 		]
 	},
   "mixins": [
@@ -36,7 +36,7 @@
   ],
 
   "depends": {
-		"minecraft": "~7.1",
+		"minecraft": "7.2-beta.1",
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
