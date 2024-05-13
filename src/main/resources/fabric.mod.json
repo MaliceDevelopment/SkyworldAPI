@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+      "malicedev.examplemod.ExampleMod"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+          "malicedev.examplemod.ExampleMod"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+          "malicedev.examplemod.ExampleMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+          "malicedev.examplemod.ExampleMod"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"skyworldapi.mixins.json"
   ],
 
   "depends": {
